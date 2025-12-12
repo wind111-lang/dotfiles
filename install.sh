@@ -70,6 +70,11 @@ if [ -f "$DOTFILES_DIR/.gitconfig" ]; then
     create_symlink "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
 fi
 
+# ターミナル/エディタ設定
+if [ -d "$DOTFILES_DIR/.config" ]; then
+    create_symlink "$DOTFILES_DIR/.config" "$HOME/.config"
+fi
+
 # ツール設定
 if [ -d "$DOTFILES_DIR/.claude" ]; then
     create_symlink "$DOTFILES_DIR/.claude" "$HOME/.claude"

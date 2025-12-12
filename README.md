@@ -13,6 +13,14 @@
 ### Git設定
 - `.gitconfig` - Git設定ファイル
 
+### ターミナル/エディタ設定
+- `.config/wezterm/` - WezTerm設定
+  - `wezterm.lua` - WezTerm設定ファイル
+- `.config/git/` - Git追加設定
+  - `ignore` - グローバルgitignore
+- `.config/neofetch/` - Neofetch設定
+  - `config.conf` - Neofetch設定ファイル
+
 ### ツール設定
 - `.claude/` - Claude Code設定
   - `settings.json.example` - Claude Code設定テンプレート（要コピー）
@@ -61,6 +69,9 @@ ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
 
 # Git設定
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+
+# ターミナル/エディタ設定
+ln -s ~/dotfiles/.config ~/.config
 
 # ツール設定
 ln -s ~/dotfiles/.claude ~/.claude
