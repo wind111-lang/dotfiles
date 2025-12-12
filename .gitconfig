@@ -1,8 +1,8 @@
 [safe]
 	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-cask
 [user]
-	email = your.email@example.com
-	name = your-name
+	email = korodora5@gmail.com
+	name = wind111-lang
 [pull]
 	rebase = false
 [init]
