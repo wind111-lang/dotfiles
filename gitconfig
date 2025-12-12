@@ -1,0 +1,11 @@
+[safe]
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-cask
+[user]
+	email = shota.tsutsui@prtimes.co.jp
+	name = wind111-lang
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[coderabbit]
+	machineId = cli/659da46262c3432bb43e39017d9f5403
