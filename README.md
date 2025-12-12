@@ -4,10 +4,10 @@
 
 ## 含まれるファイル
 
-- `zshrc` - Zsh設定ファイル (.zshrc)
-- `zshenv` - Zsh環境変数設定 (.zshenv)
-- `gitconfig` - Git設定ファイル (.gitconfig)
-- `p10k.zsh` - Powerlevel10kテーマ設定 (.p10k.zsh)
+- `.zshrc` - Zsh設定ファイル
+- `.zshenv` - Zsh環境変数設定
+- `.gitconfig` - Git設定ファイル
+- `.p10k.zsh` - Powerlevel10kテーマ設定
 
 ## セットアップ
 
@@ -28,10 +28,10 @@ mv ~/.gitconfig ~/.gitconfig.backup
 mv ~/.p10k.zsh ~/.p10k.zsh.backup
 
 # シンボリックリンクを作成
-ln -s ~/dotfiles/zshrc ~/.zshrc
-ln -s ~/dotfiles/zshenv ~/.zshenv
-ln -s ~/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/p10k.zsh ~/.p10k.zsh
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.zshenv ~/.zshenv
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
 ```
 
 ### 3. 設定を再読み込み

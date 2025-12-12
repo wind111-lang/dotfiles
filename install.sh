@@ -48,20 +48,20 @@ fi
 echo ""
 echo "シンボリックリンクを作成中..."
 
-if [ -f "$DOTFILES_DIR/zshrc" ]; then
-    create_symlink "$DOTFILES_DIR/zshrc" "$HOME/.zshrc"
+if [ -f "$DOTFILES_DIR/.zshrc" ]; then
+    create_symlink "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 fi
 
-if [ -f "$DOTFILES_DIR/zshenv" ]; then
-    create_symlink "$DOTFILES_DIR/zshenv" "$HOME/.zshenv"
+if [ -f "$DOTFILES_DIR/.zshenv" ]; then
+    create_symlink "$DOTFILES_DIR/.zshenv" "$HOME/.zshenv"
 fi
 
-if [ -f "$DOTFILES_DIR/gitconfig" ]; then
-    create_symlink "$DOTFILES_DIR/gitconfig" "$HOME/.gitconfig"
+if [ -f "$DOTFILES_DIR/.gitconfig" ]; then
+    create_symlink "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
 fi
 
-if [ -f "$DOTFILES_DIR/p10k.zsh" ]; then
-    create_symlink "$DOTFILES_DIR/p10k.zsh" "$HOME/.p10k.zsh"
+if [ -f "$DOTFILES_DIR/.p10k.zsh" ]; then
+    create_symlink "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
 fi
 
 echo ""
