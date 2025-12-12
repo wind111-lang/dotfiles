@@ -1,1 +1,24 @@
 .DS_Store
+
+# 認証情報とトークン
+**/auth.json
+**/*token*
+**/*secret*
+**/*password*
+.claude/settings.json
+
+# ログとキャッシュ
+**/history.jsonl
+**/logs/
+**/cache/
+**/debug/
+**/file-history/
+**/sessions/
+**/.cache/
+
+# 一時ファイル
+*.log
+*.tmp
+*.swp
+*.swo
+*~

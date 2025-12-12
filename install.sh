@@ -48,6 +48,7 @@ fi
 echo ""
 echo "シンボリックリンクを作成中..."
 
+# シェル設定
 if [ -f "$DOTFILES_DIR/.zshrc" ]; then
     create_symlink "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 fi
@@ -56,12 +57,38 @@ if [ -f "$DOTFILES_DIR/.zshenv" ]; then
     create_symlink "$DOTFILES_DIR/.zshenv" "$HOME/.zshenv"
 fi
 
-if [ -f "$DOTFILES_DIR/.gitconfig" ]; then
-    create_symlink "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+if [ -f "$DOTFILES_DIR/.zprofile" ]; then
+    create_symlink "$DOTFILES_DIR/.zprofile" "$HOME/.zprofile"
 fi
 
 if [ -f "$DOTFILES_DIR/.p10k.zsh" ]; then
     create_symlink "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
+fi
+
+# Git設定
+if [ -f "$DOTFILES_DIR/.gitconfig" ]; then
+    create_symlink "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+fi
+
+# ツール設定
+if [ -d "$DOTFILES_DIR/.claude" ]; then
+    create_symlink "$DOTFILES_DIR/.claude" "$HOME/.claude"
+fi
+
+if [ -f "$DOTFILES_DIR/.claude.json" ]; then
+    create_symlink "$DOTFILES_DIR/.claude.json" "$HOME/.claude.json"
+fi
+
+if [ -d "$DOTFILES_DIR/.codex" ]; then
+    create_symlink "$DOTFILES_DIR/.codex" "$HOME/.codex"
+fi
+
+if [ -d "$DOTFILES_DIR/.serena" ]; then
+    create_symlink "$DOTFILES_DIR/.serena" "$HOME/.serena"
+fi
+
+if [ -d "$DOTFILES_DIR/.vscode" ]; then
+    create_symlink "$DOTFILES_DIR/.vscode" "$HOME/.vscode"
 fi
 
 echo ""
