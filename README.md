@@ -16,15 +16,18 @@
 ### ツール設定
 - `.claude/` - Claude Code設定
   - `settings.json.example` - Claude Code設定テンプレート（要コピー）
-- `.claude.json` - Claude CLI設定
 - `.codex/` - Codex設定
-  - `config.toml` - Codex設定ファイル
+  - `config.toml` - Codex設定ファイル（テンプレート）
 - `.serena/` - Serena設定
-  - `serena_config.yml` - Serena設定ファイル
+  - `serena_config.yml` - Serena設定ファイル（テンプレート）
 - `.vscode/` - VSCode設定
   - `argv.json` - VSCode起動オプション
 
-**注意**: `.claude/settings.json`は機密情報（APIキー）を含むため、リポジトリには含まれていません。テンプレートから作成してください。
+**注意**: 以下のファイルは機密情報を含むため、リポジトリには含まれていません：
+- `.claude/settings.json` - APIキーを含む
+- `.claude.json` - プロジェクト固有の設定を含む
+
+設定ファイルはテンプレートとして提供されています。実際に使用する際は、個人情報やプロジェクト固有の情報を追加してください。
 
 ### IDE設定
 - `phpstorm/` - PhpStorm設定

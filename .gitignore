@@ -6,6 +6,7 @@
 **/*secret*
 **/*password*
 .claude/settings.json
+.claude.json
 
 # ログとキャッシュ
 **/history.jsonl

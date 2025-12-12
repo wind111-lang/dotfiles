@@ -68,9 +68,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias vi='nvim'
 alias vim='nvim'
-alias ol-dev='sh $HOME/ol.sh OneLogin_prtimes_Developer'
-alias ol-poweruser='sh $HOME/ol.sh OneLogin_prtimes_PowerUser'
-alias ol-test='op item get onelogin-tsutsui --otp | onelogin-aws-assume-role -c ~/awskey --profile default --onelogin-password `op read "op://Private/onelogin-tsutsui/password"` --aws-role-name "OneLogin_prtimes-test_PowerUser" --aws-account-id 131334648224'
+# Company-specific aliases removed for security
 alias git="LC_ALL=ko_KR.UTF-8 git"
 
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
